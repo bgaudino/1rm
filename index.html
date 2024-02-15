@@ -111,11 +111,11 @@
           <div className="row">
             <div className="col-md-4 form-group">
               <label for="weight">Weight</label>
-              <input autoFocus id="weight" className="form-control" type="number" name="weight" onInput=${handleChange} value=${state.weight} />
+              <input autoFocus id="weight" min="0" className="form-control" type="number" name="weight" onInput=${handleChange} value=${state.weight} />
             </div>
             <div className="col-md-4 form-group">
               <label for="reps">Reps</label>
-              <input id="reps" className="form-control" type="number" name="reps" onInput=${handleChange} value=${state.reps} />
+              <input id="reps" min="1" max="20" className="form-control" type="number" name="reps" onInput=${handleChange} value=${state.reps} />
             </div>
             <div className="col-md-4 form-group">
               <label for="formula">Formula</label>
